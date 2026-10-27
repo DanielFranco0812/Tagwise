@@ -1,0 +1,492 @@
+:root {
+    --ux-ivory: #f8f5f0;
+    --ux-beige: #e6d5c3;
+    --ux-mocha: #b08968;
+    --ux-mocha-dark: #76583f;
+    --ux-brown: #5c4033;
+    --ux-charcoal: #333333;
+    --ux-border: #e6e0d7;
+    --ux-white: #ffffff;
+    --ux-focus: #76583f;
+}
+
+html,
+body {
+    background: var(--ux-ivory);
+    color: var(--ux-charcoal);
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.content-wrapper,
+.right-side,
+.login-page {
+    background-color: var(--ux-ivory) !important;
+    color: var(--ux-charcoal);
+}
+
+.main-header .navbar,
+.main-header .logo,
+.main-header .navbar-left,
+.main-header .navbar-custom-menu {
+    background-color: var(--ux-mocha-dark) !important;
+    color: var(--ux-white) !important;
+}
+
+.main-header .navbar-custom-menu > .navbar-nav {
+    background-color: var(--ux-mocha-dark) !important;
+}
+
+.main-header .logo,
+.main-header .logo a,
+.main-header .navbar a,
+.main-header .navbar .sidebar-toggle {
+    color: var(--ux-white) !important;
+}
+
+.main-header .navbar-custom-menu > .navbar-nav > li > a {
+    background-color: transparent !important;
+    color: var(--ux-white) !important;
+}
+
+.main-header .navbar .navbar-nav > li > a,
+.main-header .navbar .navbar-nav > li > a:visited {
+    background-color: transparent !important;
+    color: var(--ux-white) !important;
+}
+
+.main-header .navbar .navbar-nav > li.active > a,
+.main-header .navbar .navbar-nav > li.open > a,
+.main-header .navbar .navbar-nav > li > a:hover,
+.main-header .navbar .navbar-nav > li > a:focus {
+    background-color: var(--ux-brown) !important;
+    color: var(--ux-white) !important;
+}
+
+.main-header .navbar a:hover,
+.main-header .navbar a:focus {
+    background-color: var(--ux-brown) !important;
+}
+
+.main-sidebar,
+.left-side {
+    background-color: var(--ux-brown) !important;
+}
+
+.sidebar-menu > li > a,
+.sidebar-menu .treeview-menu > li > a,
+.sidebar-menu .header {
+    color: var(--ux-white);
+}
+
+.sidebar-menu > li > a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: background-color 120ms ease-in-out;
+}
+
+.sidebar-menu > li > a > .fa,
+.sidebar-menu > li > a > .fas,
+.sidebar-menu > li > a > .far,
+.sidebar-menu > li > a > .fab {
+    width: 22px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.sidebar-menu > li:hover > a,
+.sidebar-menu > li.active > a,
+.sidebar-menu > li.menu-open > a {
+    background-color: var(--ux-mocha-dark);
+    border-left-color: var(--ux-mocha);
+    color: var(--ux-white);
+}
+
+.sidebar-menu .treeview-menu > li > a {
+    padding-left: 28px;
+}
+
+.sidebar-menu .treeview-menu .treeview-menu > li > a {
+    padding-left: 42px;
+}
+
+.box,
+.panel,
+.modal-content,
+.dropdown-menu,
+.small-box,
+.info-box {
+    background-color: var(--ux-white);
+    border-color: var(--ux-border);
+    color: var(--ux-charcoal);
+}
+
+.box {
+    border-top-color: var(--ux-mocha);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgb(92 64 51 / 8%);
+}
+
+.box-header,
+.box-footer,
+.modal-header,
+.modal-footer {
+    border-color: var(--ux-border);
+}
+
+h1,
+h2,
+h3,
+h4,
+.box-title,
+.modal-title {
+    color: var(--ux-brown) !important;
+}
+
+label,
+.control-label,
+.help-block,
+.text-muted {
+    color: var(--ux-charcoal);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control,
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple {
+    min-height: 38px;
+    background-color: var(--ux-white) !important;
+    border-color: var(--ux-border) !important;
+    border-radius: 4px;
+    color: var(--ux-charcoal) !important;
+}
+
+textarea.form-control {
+    min-height: 96px;
+}
+
+.form-control:focus,
+.select2-container--default.select2-container--focus .select2-selection--single,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border-color: var(--ux-mocha-dark);
+    box-shadow: 0 0 0 3px rgb(176 137 104 / 22%);
+    outline: 0;
+}
+
+.required {
+    border-right-color: var(--ux-mocha);
+}
+
+.btn-theme,
+.btn-primary {
+    background-color: var(--ux-mocha-dark) !important;
+    border-color: var(--ux-mocha-dark) !important;
+    color: var(--ux-white) !important;
+}
+
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: var(--ux-brown) !important;
+    border-color: var(--ux-brown) !important;
+    color: var(--ux-white) !important;
+}
+
+.btn-warning {
+    background-color: var(--ux-beige) !important;
+    border-color: var(--ux-mocha) !important;
+    color: var(--ux-brown) !important;
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+    background-color: var(--ux-mocha-dark) !important;
+    border-color: var(--ux-mocha-dark) !important;
+    color: var(--ux-white) !important;
+}
+
+.btn,
+.btn-sm {
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.btn:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--ux-focus) !important;
+    outline-offset: 2px;
+}
+
+.table,
+.table > thead > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    border-color: var(--ux-border);
+}
+
+.table > thead > tr > th {
+    background-color: #f1e8de;
+    color: var(--ux-brown);
+    vertical-align: middle;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd),
+.table-striped > tbody > tr:nth-of-type(odd) > td {
+    background-color: #fcfaf7;
+}
+
+.table-hover > tbody > tr:hover > td {
+    background-color: #f4ece3;
+}
+
+.table-responsive {
+    border-color: var(--ux-border);
+}
+
+.alert,
+.callout {
+    border-radius: 4px;
+}
+
+.alert-danger,
+.callout-danger {
+    border-color: #a94442;
+}
+
+.alert-success,
+.callout-success {
+    border-color: #3c763d;
+}
+
+.has-error .form-control,
+.error .form-control {
+    border-color: #a94442 !important;
+}
+
+.alert-msg,
+.has-error .help-block,
+.error .help-block {
+    display: block;
+    margin-top: 6px;
+    color: #8b2e2b;
+}
+
+.bulk-rfid-panel {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f1e8de;
+    border: 1px solid var(--ux-border);
+    border-radius: 6px;
+}
+
+.bulk-rfid-panel h2 {
+    margin-top: 0;
+}
+
+#bulk_rfid_scan {
+    min-height: 44px;
+    font-size: 16px;
+}
+
+#bulk_rfid_status {
+    color: var(--ux-brown);
+}
+
+#bulk_rfid_count,
+#bulk_match_count {
+    color: var(--ux-charcoal) !important;
+}
+
+#bulk_rfid_tags {
+    min-height: 32px;
+}
+
+#warning_mess {
+    min-height: 1.5em;
+    margin: 8px 0 0;
+    color: var(--ux-brown);
+    font-weight: 600;
+}
+
+.main-footer {
+    background-color: var(--ux-white);
+    border-color: var(--ux-border);
+    color: var(--ux-charcoal);
+}
+
+.login-box,
+.register-box {
+    background: var(--ux-white);
+    border: 1px solid var(--ux-border);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgb(92 64 51 / 8%);
+}
+
+.dashboard-count-card.small-box {
+    min-height: 142px;
+    margin-bottom: 18px;
+    overflow: hidden;
+    background: var(--ux-white) !important;
+    border: 1px solid var(--ux-border);
+    border-left: 4px solid var(--ux-mocha);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgb(92 64 51 / 8%);
+    color: var(--ux-charcoal) !important;
+}
+
+.dashboard-count-card.small-box:hover {
+    box-shadow: 0 4px 12px rgb(92 64 51 / 14%);
+}
+
+.dashboard-count-card.small-box h3,
+.dashboard-count-card.small-box p,
+.dashboard-count-card.small-box .small-box-footer {
+    color: var(--ux-charcoal) !important;
+}
+
+.dashboard-count-card.small-box h3 {
+    font-size: 30px;
+}
+
+.dashboard-count-card.small-box .icon {
+    top: 14px;
+    right: 14px;
+    font-size: 42px;
+    color: var(--ux-beige) !important;
+}
+
+.dashboard-count-card--sage.small-box {
+    border-left-color: var(--ux-sage);
+}
+
+.dashboard-count-card--sage.small-box .icon {
+    color: var(--ux-sage) !important;
+}
+
+.dashboard-count-card.small-box .small-box-footer {
+    background: #f1e8de;
+    padding: 6px 10px;
+    text-align: left;
+}
+
+.dashboard-empty-actions .btn {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #f1e8de !important;
+    border-color: var(--ux-border) !important;
+    color: var(--ux-brown) !important;
+    white-space: normal;
+}
+
+.dashboard-empty-actions .btn:hover,
+.dashboard-empty-actions .btn:focus {
+    background-color: var(--ux-mocha-dark) !important;
+    border-color: var(--ux-mocha-dark) !important;
+    color: var(--ux-white) !important;
+}
+
+.dashboard-chart-empty {
+    max-width: 760px;
+}
+
+.dashboard-chart-empty .box-body {
+    color: var(--ux-charcoal);
+}
+
+.dashboard-quick-actions {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 4px 0 22px;
+    padding: 16px;
+    background: var(--ux-white);
+    border: 1px solid var(--ux-border);
+    border-radius: 6px;
+}
+
+.dashboard-quick-actions > .btn {
+    min-height: 38px;
+}
+
+.dashboard-quick-actions .dashboard-tag-search {
+    flex: 1 1 260px;
+    max-width: 440px;
+    margin: 0 0 0 auto;
+}
+
+.dashboard-tag-search label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.dashboard-tag-search .form-control {
+    min-height: 38px;
+}
+
+@media (max-width: 767px) {
+    .main-header .navbar-static-top > .sidebar-toggle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1031;
+        width: 44px;
+        height: 50px;
+        margin-left: 0 !important;
+    }
+
+    .main-header .logo.navbar-brand {
+        padding-left: 52px !important;
+    }
+
+    .content-wrapper,
+    .right-side {
+        min-height: 100vh;
+    }
+
+    .bulk-rfid-panel {
+        padding: 16px;
+    }
+
+    .bulk-rfid-panel .btn {
+        width: 100%;
+    }
+
+    .dashboard-quick-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .dashboard-quick-actions > .btn,
+    .dashboard-quick-actions .dashboard-tag-search {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+    }
+
+    .box-footer .btn {
+        margin-bottom: 6px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
